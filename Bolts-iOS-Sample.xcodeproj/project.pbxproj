@@ -12,6 +12,7 @@
 		491D04921A02250B005A2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491D04911A02250B005A2D71 /* Images.xcassets */; };
 		491D04951A02250B005A2D71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491D04931A02250B005A2D71 /* LaunchScreen.xib */; };
 		491D04A11A02250B005A2D71 /* Bolts_iOS_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */; };
+		491D04AE1A023957005A2D71 /* BFTaskBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */; };
 		6BCC64CAA0AB5E9726F604F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC863D5AC5930E4884F089F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		491D049A1A02250B005A2D71 /* Bolts-iOS-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bolts-iOS-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		491D049F1A02250B005A2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolts_iOS_SampleTests.swift; sourceTree = "<group>"; };
+		491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFTaskBasicViewController.swift; sourceTree = "<group>"; };
 		F9A129C9C6A9D082D93A53D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC863D5AC5930E4884F089F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -90,6 +92,7 @@
 		491D04871A02250B005A2D71 /* Bolts-iOS-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				491D04AC1A02390D005A2D71 /* UI */,
 				491D048A1A02250B005A2D71 /* AppDelegate.swift */,
 				491D048E1A02250B005A2D71 /* Main.storyboard */,
 				491D04911A02250B005A2D71 /* Images.xcassets */,
@@ -122,6 +125,14 @@
 				491D049F1A02250B005A2D71 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491D04AC1A02390D005A2D71 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		D7D5E0C940CDBE73D7B773B5 /* Pods */ = {
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				491D04AE1A023957005A2D71 /* BFTaskBasicViewController.swift in Sources */,
 				491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
