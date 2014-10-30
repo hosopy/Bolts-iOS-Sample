@@ -54,6 +54,9 @@
                                                 <constraint firstAttribute="centerY" secondItem="nHi-Ng-RAQ" secondAttribute="centerY" id="wFu-Ff-cXT"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Ckb-LF-C8c" kind="show" id="Slm-xb-sgr"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="SgY-F2-dqB">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -173,7 +176,78 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlV-KI-Gi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1430" y="787"/>
+            <point key="canvasLocation" x="1467" y="-105"/>
+        </scene>
+        <!--Tasks in Series-->
+        <scene sceneID="9hW-Wm-aA5">
+            <objects>
+                <viewController title="Tasks in Series" id="Ckb-LF-C8c" customClass="TasksInSeriesViewController" customModule="Bolts_iOS_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tp0-Jn-mPG"/>
+                        <viewControllerLayoutGuide type="bottom" id="4iu-kh-eTe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pdi-Yo-n1I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vu8-Dz-huO">
+                                <rect key="frame" x="270" y="72" width="60" height="30"/>
+                                <state key="normal" title="Execute!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="executeAction:" destination="Ckb-LF-C8c" eventType="touchUpInside" id="f7c-OV-qDX"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人生ﾊｼﾞﾏﾀ＼（＾o＾）／" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbO-eo-HlD">
+                                <rect key="frame" x="206" y="152" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人生ﾊｼﾞﾏﾀ＼（＾o＾）／" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EUA-JV-tyO">
+                                <rect key="frame" x="206" y="222" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人生ﾊｼﾞﾏﾀ＼（＾o＾）／" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cuE-oZ-FyZ">
+                                <rect key="frame" x="206" y="293" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cuE-oZ-FyZ" firstAttribute="top" secondItem="EUA-JV-tyO" secondAttribute="bottom" constant="50" id="6uc-9R-OCC"/>
+                            <constraint firstItem="EUA-JV-tyO" firstAttribute="top" secondItem="DbO-eo-HlD" secondAttribute="bottom" constant="50" id="C1s-Fd-HTw"/>
+                            <constraint firstAttribute="centerX" secondItem="vu8-Dz-huO" secondAttribute="centerX" id="Kvc-7X-DMf"/>
+                            <constraint firstItem="EUA-JV-tyO" firstAttribute="top" secondItem="DbO-eo-HlD" secondAttribute="bottom" constant="50" id="eYL-6d-DsM"/>
+                            <constraint firstAttribute="centerX" secondItem="cuE-oZ-FyZ" secondAttribute="centerX" id="jbO-Z3-3yT"/>
+                            <constraint firstAttribute="centerX" secondItem="EUA-JV-tyO" secondAttribute="centerX" id="pEw-4n-vgJ"/>
+                            <constraint firstItem="DbO-eo-HlD" firstAttribute="top" secondItem="vu8-Dz-huO" secondAttribute="bottom" constant="50" id="pQ7-gJ-WUd"/>
+                            <constraint firstItem="cuE-oZ-FyZ" firstAttribute="top" secondItem="EUA-JV-tyO" secondAttribute="bottom" constant="50" id="rUa-MS-8kj"/>
+                            <constraint firstAttribute="centerX" secondItem="cuE-oZ-FyZ" secondAttribute="centerX" id="sA6-rG-pDT"/>
+                            <constraint firstAttribute="centerX" secondItem="DbO-eo-HlD" secondAttribute="centerX" id="ufF-zH-75W"/>
+                            <constraint firstItem="vu8-Dz-huO" firstAttribute="top" secondItem="Tp0-Jn-mPG" secondAttribute="bottom" constant="8" id="wYZ-Py-o5x"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rUa-MS-8kj"/>
+                                <exclude reference="sA6-rG-pDT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel1" destination="DbO-eo-HlD" id="Eqd-vX-J1y"/>
+                        <outlet property="resultLabel2" destination="EUA-JV-tyO" id="qDv-Kc-1CP"/>
+                        <outlet property="resultLabel3" destination="cuE-oZ-FyZ" id="Bs9-8l-hpc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeE-DY-MOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1511" y="568"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J4k-o6-fOt">

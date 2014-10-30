@@ -14,6 +14,7 @@
 		491D04A11A02250B005A2D71 /* Bolts_iOS_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */; };
 		491D04AE1A023957005A2D71 /* BFTaskBasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */; };
 		491D04B21A02495D005A2D71 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04B11A02495D005A2D71 /* Util.swift */; };
+		491D04B41A024DB5005A2D71 /* TasksInSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04B31A024DB5005A2D71 /* TasksInSeriesViewController.swift */; };
 		6BCC64CAA0AB5E9726F604F6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC863D5AC5930E4884F089F7 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFTaskBasicViewController.swift; sourceTree = "<group>"; };
 		491D04B01A0240A6005A2D71 /* Bolts-iOS-Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bolts-iOS-Sample-Bridging-Header.h"; sourceTree = "<group>"; };
 		491D04B11A02495D005A2D71 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		491D04B31A024DB5005A2D71 /* TasksInSeriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksInSeriesViewController.swift; sourceTree = "<group>"; };
 		F9A129C9C6A9D082D93A53D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FC863D5AC5930E4884F089F7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */,
+				491D04B31A024DB5005A2D71 /* TasksInSeriesViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				491D04AE1A023957005A2D71 /* BFTaskBasicViewController.swift in Sources */,
+				491D04B41A024DB5005A2D71 /* TasksInSeriesViewController.swift in Sources */,
 				491D04B21A02495D005A2D71 /* Util.swift in Sources */,
 				491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */,
 			);
