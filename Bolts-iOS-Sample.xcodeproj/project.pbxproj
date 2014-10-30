@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D048A1A02250B005A2D71 /* AppDelegate.swift */; };
+		491D048D1A02250B005A2D71 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D048C1A02250B005A2D71 /* ViewController.swift */; };
+		491D04901A02250B005A2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491D048E1A02250B005A2D71 /* Main.storyboard */; };
+		491D04921A02250B005A2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491D04911A02250B005A2D71 /* Images.xcassets */; };
+		491D04951A02250B005A2D71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491D04931A02250B005A2D71 /* LaunchScreen.xib */; };
+		491D04A11A02250B005A2D71 /* Bolts_iOS_SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		491D049B1A02250B005A2D71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 491D047D1A02250B005A2D71 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 491D04841A02250B005A2D71;
+			remoteInfo = "Bolts-iOS-Sample";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		491D04851A02250B005A2D71 /* Bolts-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bolts-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491D04891A02250B005A2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491D048A1A02250B005A2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		491D048C1A02250B005A2D71 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		491D048F1A02250B005A2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		491D04911A02250B005A2D71 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		491D04941A02250B005A2D71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		491D049A1A02250B005A2D71 /* Bolts-iOS-SampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bolts-iOS-SampleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		491D049F1A02250B005A2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bolts_iOS_SampleTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		491D04821A02250B005A2D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491D04971A02250B005A2D71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		491D047C1A02250B005A2D71 = {
+			isa = PBXGroup;
+			children = (
+				491D04871A02250B005A2D71 /* Bolts-iOS-Sample */,
+				491D049D1A02250B005A2D71 /* Bolts-iOS-SampleTests */,
+				491D04861A02250B005A2D71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		491D04861A02250B005A2D71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				491D04851A02250B005A2D71 /* Bolts-iOS-Sample.app */,
+				491D049A1A02250B005A2D71 /* Bolts-iOS-SampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		491D04871A02250B005A2D71 /* Bolts-iOS-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				491D048A1A02250B005A2D71 /* AppDelegate.swift */,
+				491D048C1A02250B005A2D71 /* ViewController.swift */,
+				491D048E1A02250B005A2D71 /* Main.storyboard */,
+				491D04911A02250B005A2D71 /* Images.xcassets */,
+				491D04931A02250B005A2D71 /* LaunchScreen.xib */,
+				491D04881A02250B005A2D71 /* Supporting Files */,
+			);
+			path = "Bolts-iOS-Sample";
+			sourceTree = "<group>";
+		};
+		491D04881A02250B005A2D71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491D04891A02250B005A2D71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		491D049D1A02250B005A2D71 /* Bolts-iOS-SampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				491D04A01A02250B005A2D71 /* Bolts_iOS_SampleTests.swift */,
+				491D049E1A02250B005A2D71 /* Supporting Files */,
+			);
+			path = "Bolts-iOS-SampleTests";
+			sourceTree = "<group>";
+		};
+		491D049E1A02250B005A2D71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				491D049F1A02250B005A2D71 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		491D04841A02250B005A2D71 /* Bolts-iOS-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491D04A41A02250B005A2D71 /* Build configuration list for PBXNativeTarget "Bolts-iOS-Sample" */;
+			buildPhases = (
+				491D04811A02250B005A2D71 /* Sources */,
+				491D04821A02250B005A2D71 /* Frameworks */,
+				491D04831A02250B005A2D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bolts-iOS-Sample";
+			productName = "Bolts-iOS-Sample";
+			productReference = 491D04851A02250B005A2D71 /* Bolts-iOS-Sample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		491D04991A02250B005A2D71 /* Bolts-iOS-SampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 491D04A71A02250B005A2D71 /* Build configuration list for PBXNativeTarget "Bolts-iOS-SampleTests" */;
+			buildPhases = (
+				491D04961A02250B005A2D71 /* Sources */,
+				491D04971A02250B005A2D71 /* Frameworks */,
+				491D04981A02250B005A2D71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				491D049C1A02250B005A2D71 /* PBXTargetDependency */,
+			);
+			name = "Bolts-iOS-SampleTests";
+			productName = "Bolts-iOS-SampleTests";
+			productReference = 491D049A1A02250B005A2D71 /* Bolts-iOS-SampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		491D047D1A02250B005A2D71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = hosopy;
+				TargetAttributes = {
+					491D04841A02250B005A2D71 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					491D04991A02250B005A2D71 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 491D04841A02250B005A2D71;
+					};
+				};
+			};
+			buildConfigurationList = 491D04801A02250B005A2D71 /* Build configuration list for PBXProject "Bolts-iOS-Sample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 491D047C1A02250B005A2D71;
+			productRefGroup = 491D04861A02250B005A2D71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				491D04841A02250B005A2D71 /* Bolts-iOS-Sample */,
+				491D04991A02250B005A2D71 /* Bolts-iOS-SampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		491D04831A02250B005A2D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D04901A02250B005A2D71 /* Main.storyboard in Resources */,
+				491D04951A02250B005A2D71 /* LaunchScreen.xib in Resources */,
+				491D04921A02250B005A2D71 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491D04981A02250B005A2D71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		491D04811A02250B005A2D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D048D1A02250B005A2D71 /* ViewController.swift in Sources */,
+				491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		491D04961A02250B005A2D71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491D04A11A02250B005A2D71 /* Bolts_iOS_SampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		491D049C1A02250B005A2D71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 491D04841A02250B005A2D71 /* Bolts-iOS-Sample */;
+			targetProxy = 491D049B1A02250B005A2D71 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		491D048E1A02250B005A2D71 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491D048F1A02250B005A2D71 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		491D04931A02250B005A2D71 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				491D04941A02250B005A2D71 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		491D04A21A02250B005A2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		491D04A31A02250B005A2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		491D04A51A02250B005A2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bolts-iOS-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		491D04A61A02250B005A2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Bolts-iOS-Sample/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		491D04A81A02250B005A2D71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bolts-iOS-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bolts-iOS-Sample.app/Bolts-iOS-Sample";
+			};
+			name = Debug;
+		};
+		491D04A91A02250B005A2D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bolts-iOS-SampleTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bolts-iOS-Sample.app/Bolts-iOS-Sample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		491D04801A02250B005A2D71 /* Build configuration list for PBXProject "Bolts-iOS-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D04A21A02250B005A2D71 /* Debug */,
+				491D04A31A02250B005A2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		491D04A41A02250B005A2D71 /* Build configuration list for PBXNativeTarget "Bolts-iOS-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D04A51A02250B005A2D71 /* Debug */,
+				491D04A61A02250B005A2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		491D04A71A02250B005A2D71 /* Build configuration list for PBXNativeTarget "Bolts-iOS-SampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				491D04A81A02250B005A2D71 /* Debug */,
+				491D04A91A02250B005A2D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 491D047D1A02250B005A2D71 /* Project object */;
+}
