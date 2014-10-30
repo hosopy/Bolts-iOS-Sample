@@ -136,8 +136,40 @@
                     <view key="view" contentMode="scaleToFill" id="8hL-Jy-zcG">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Miq-sK-4Fu">
+                                <rect key="frame" x="271" y="72" width="59" height="30"/>
+                                <state key="normal" title="Exexute!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="executeAction:" destination="IVt-TM-wiN" eventType="touchUpInside" id="f4T-lg-zm5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="人生ﾊｼﾞﾏﾀ＼（＾o＾）／" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pu0-WI-iQ3">
+                                <rect key="frame" x="206" y="291" width="189" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Miq-sK-4Fu" secondAttribute="centerX" id="A7Q-vb-biG"/>
+                            <constraint firstItem="Miq-sK-4Fu" firstAttribute="top" secondItem="sy6-jG-VP8" secondAttribute="bottom" constant="8" id="K4F-BH-Pw7"/>
+                            <constraint firstItem="pu0-WI-iQ3" firstAttribute="top" secondItem="Miq-sK-4Fu" secondAttribute="bottom" constant="50" id="Noc-iH-yyn"/>
+                            <constraint firstAttribute="centerX" secondItem="pu0-WI-iQ3" secondAttribute="centerX" id="Yhu-t9-r0Y"/>
+                            <constraint firstAttribute="centerY" secondItem="pu0-WI-iQ3" secondAttribute="centerY" id="kFo-NS-Lna"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Noc-iH-yyn"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="pu0-WI-iQ3" id="Jzt-dg-Qsc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlV-KI-Gi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,7 +9,10 @@
 import UIKit
 
 class BFTaskBasicViewController: UIViewController {
-
+    
+    @IBOutlet private weak var resultLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,6 +24,39 @@ class BFTaskBasicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func executeAction(sender: AnyObject) {
+        self.resultLabel.text = "処理中..."
+        
+        self.doHeavyJobAsync().continueWithBlock {
+            // doHeavyJobAsync が返したBFTaskが完了したら呼ばれる
+            (task: BFTask!) -> BFTask! in
+            if task.cancelled {
+                // キャンセル
+            } else if task.error != nil {
+                // エラー
+                self.resultLabel.text = "エラー"
+            } else {
+                // 成功
+                let result = task.result as NSString
+                self.resultLabel.text = result
+            }
+            
+            // このTaskで終了
+            return nil
+        }
+    }
+    
+    private func doHeavyJobAsync() -> BFTask {
+        var successful = BFTaskCompletionSource()
+        
+        // 5秒待ちの処理
+        // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
+        Util.delay(5, {
+            successful.setResult("人生ｵﾜﾀ＼(^o^)／")
+        })
+        
+        return successful.task
+    }
 
     /*
     // MARK: - Navigation
