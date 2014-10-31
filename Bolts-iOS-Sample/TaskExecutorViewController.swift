@@ -48,15 +48,18 @@ class TaskExecutorViewController: UIViewController {
     }
 
     private func doHeavyJobAsync() -> BFTask {
-        var successful = BFTaskCompletionSource()
+        var completionSource = BFTaskCompletionSource()
         
         // 5秒待ちの処理
         // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
         Util.delay(5, {
-            successful.setResult("人生ｵﾜﾀ＼(^o^)／")
+            completionSource.setResult("人生ｵﾜﾀ＼(^o^)／")
+            // エラーにしたければ setError
+            //completionSource.setError(NSError(domain:"hosopy.com", code:-1, userInfo: nil))
+
         })
         
-        return successful.task
+        return completionSource.task
     }
     
     

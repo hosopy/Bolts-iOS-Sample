@@ -39,15 +39,15 @@ class TasksInParallelViewController: UIViewController {
     }
     
     private func doRootHeavyJobAsync() -> BFTask {
-        var successful = BFTaskCompletionSource()
+        var completionSource = BFTaskCompletionSource()
         
         // 5秒待ちの処理
         // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
         Util.delay(5, {
-            successful.setResult([5, 10, 15])
+            completionSource.setResult([5, 10, 15])
         })
         
-        return successful.task
+        return completionSource.task
     }
     
     private func doHeavyJobAsyncWithDelay(delay: Double) -> BFTask {

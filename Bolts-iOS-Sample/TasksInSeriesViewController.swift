@@ -67,39 +67,39 @@ class TasksInSeriesViewController: UIViewController {
     }
     
     private func doHeavyJobAsync1() -> BFTask {
-        var successful = BFTaskCompletionSource()
+        var completionSource = BFTaskCompletionSource()
         
         // 5秒待ちの処理
         // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
         Util.delay(5, {
-            successful.setResult("人生")
+            completionSource.setResult("人生")
         })
         
-        return successful.task
+        return completionSource.task
     }
     
     private func doHeavyJobAsync2(prevResult: String) -> BFTask {
-        var successful = BFTaskCompletionSource()
+        var completionSource = BFTaskCompletionSource()
         
         // 5秒待ちの処理
         // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
         Util.delay(5, {
-            successful.setResult(prevResult + "ｵﾜﾀ")
+            completionSource.setResult(prevResult + "ｵﾜﾀ")
         })
         
-        return successful.task
+        return completionSource.task
     }
     
     private func doHeavyJobAsync3(prevResult: String) -> BFTask {
-        var successful = BFTaskCompletionSource()
+        var completionSource = BFTaskCompletionSource()
         
         // 5秒待ちの処理
         // 実用的には、AFNetworkingのcompletionブロック等でsetResultするイメージ
         Util.delay(5, {
-            successful.setResult(prevResult+"＼(^o^)／")
+            completionSource.setResult(prevResult+"＼(^o^)／")
         })
         
-        return successful.task
+        return completionSource.task
     }
     
     /*
