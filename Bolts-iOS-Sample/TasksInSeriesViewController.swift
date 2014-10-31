@@ -31,6 +31,8 @@ class TasksInSeriesViewController: UIViewController {
         
         self.resultLabel1.text = "処理中..."
         
+        // サンプルコードとしてこうしているが、UIの操作はmainThreadExecutorで行うべき
+        // doHeavyJobAsync1().continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock:{
         // doHeavyJobAsync1 から開始
         doHeavyJobAsync1().continueWithBlock {
             (task: BFTask!) -> BFTask in

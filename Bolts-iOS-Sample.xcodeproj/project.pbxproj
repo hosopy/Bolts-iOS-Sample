@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4910C5441A0340BD00163B28 /* TaskExecutorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4910C5431A0340BD00163B28 /* TaskExecutorViewController.swift */; };
 		491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D048A1A02250B005A2D71 /* AppDelegate.swift */; };
 		491D04901A02250B005A2D71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 491D048E1A02250B005A2D71 /* Main.storyboard */; };
 		491D04921A02250B005A2D71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 491D04911A02250B005A2D71 /* Images.xcassets */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		08D7CB31F26C95405D8B224A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4910C5431A0340BD00163B28 /* TaskExecutorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskExecutorViewController.swift; sourceTree = "<group>"; };
 		491D04851A02250B005A2D71 /* Bolts-iOS-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bolts-iOS-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		491D04891A02250B005A2D71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		491D048A1A02250B005A2D71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 				491D04AD1A023957005A2D71 /* BFTaskBasicViewController.swift */,
 				491D04B31A024DB5005A2D71 /* TasksInSeriesViewController.swift */,
 				491D04B51A025638005A2D71 /* TasksInParallelViewController.swift */,
+				4910C5431A0340BD00163B28 /* TaskExecutorViewController.swift */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				491D04B61A025638005A2D71 /* TasksInParallelViewController.swift in Sources */,
 				491D04B41A024DB5005A2D71 /* TasksInSeriesViewController.swift in Sources */,
 				491D04B21A02495D005A2D71 /* Util.swift in Sources */,
+				4910C5441A0340BD00163B28 /* TaskExecutorViewController.swift in Sources */,
 				491D048B1A02250B005A2D71 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

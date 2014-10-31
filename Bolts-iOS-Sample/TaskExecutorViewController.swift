@@ -1,15 +1,15 @@
 //
-//  BFTaskBasicViewController.swift
+//  TaskExecutorViewController.swift
 //  Bolts-iOS-Sample
 //
-//  Created by Keishi Hosoba on 2014/10/30.
+//  Created by Keishi Hosoba on 2014/10/31.
 //  Copyright (c) 2014年 hosopy. All rights reserved.
 //
 
 import UIKit
 
-class BFTaskBasicViewController: UIViewController {
-    
+class TaskExecutorViewController: UIViewController {
+
     @IBOutlet private weak var resultLabel: UILabel!
     
     
@@ -24,12 +24,11 @@ class BFTaskBasicViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
     @IBAction func executeAction(sender: AnyObject) {
         self.resultLabel.text = "処理中..."
         
-        // サンプルコードとしてこうしているが、UIの操作はmainThreadExecutorで行うべき
-        // doHeavyJobAsync().continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock:{
-        doHeavyJobAsync().continueWithBlock {
+        self.doHeavyJobAsync().continueWithExecutor(BFExecutor.mainThreadExecutor(), withBlock:{
             // doHeavyJobAsync が返したBFTaskが完了したら呼ばれる
             (task: BFTask!) -> BFTask! in
             if task.cancelled {
@@ -45,9 +44,9 @@ class BFTaskBasicViewController: UIViewController {
             
             // このTaskで終了
             return nil
-        }
+        })
     }
-    
+
     private func doHeavyJobAsync() -> BFTask {
         var successful = BFTaskCompletionSource()
         
@@ -59,7 +58,8 @@ class BFTaskBasicViewController: UIViewController {
         
         return successful.task
     }
-
+    
+    
     /*
     // MARK: - Navigation
 
