@@ -75,6 +75,9 @@
                                                 <constraint firstItem="mSY-Lj-yUK" firstAttribute="leading" secondItem="fqO-Ib-amz" secondAttribute="leadingMargin" constant="15" id="ygp-oI-f9G"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="f24-ZQ-a4y" kind="show" id="iij-Ve-gcu"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="BCM-Im-FOR">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -176,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BlV-KI-Gi2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1467" y="-105"/>
+            <point key="canvasLocation" x="1447" y="-454"/>
         </scene>
         <!--Tasks in Series-->
         <scene sceneID="9hW-Wm-aA5">
@@ -247,7 +250,40 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeE-DY-MOx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1511" y="568"/>
+            <point key="canvasLocation" x="1504" y="231"/>
+        </scene>
+        <!--Tasks in Parallel-->
+        <scene sceneID="eLf-Os-rYq">
+            <objects>
+                <viewController title="Tasks in Parallel" id="f24-ZQ-a4y" customClass="TasksInParallelViewController" customModule="Bolts_iOS_Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZF5-iL-7fH"/>
+                        <viewControllerLayoutGuide type="bottom" id="B2h-bN-zud"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q8B-0U-ToA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3wS-4e-FBZ">
+                                <rect key="frame" x="270" y="72" width="60" height="30"/>
+                                <state key="normal" title="Execute!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="executeAction:" destination="f24-ZQ-a4y" eventType="touchUpInside" id="fec-vn-Hst"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="3wS-4e-FBZ" secondAttribute="centerX" id="0Uu-SS-RBV"/>
+                            <constraint firstItem="3wS-4e-FBZ" firstAttribute="top" secondItem="ZF5-iL-7fH" secondAttribute="bottom" constant="8" id="lQX-5j-C95"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V2m-ig-oZy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1520" y="877"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="J4k-o6-fOt">
